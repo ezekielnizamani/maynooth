@@ -14,6 +14,11 @@
   border-radius: 5rem;
   display: flex;
   align-items: center;
+  transition: ease-out .4s;
+}
+.social-media_item:hover{
+  box-shadow: 0 2px 2px rgba(0,0,0,.3);
+  transform: scale(1.2);
 }
 .social-media_item:not(:last-child){
   margin-right: 1rem;
