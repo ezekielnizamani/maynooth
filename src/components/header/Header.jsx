@@ -11,7 +11,9 @@ const Header = () => {
         <select>
           <option selected>USD</option>
         </select>
-        <img className="logo" src={Logo} alt="maynooth logo" />
+        <div className="logo_box">
+          <img className="logo" src={Logo} alt="maynooth logo" />
+        </div>
 
         <ul className="social-medias_list flex items-center">
           <li className="social-media_item flex items-center">

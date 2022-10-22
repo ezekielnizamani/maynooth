@@ -3,8 +3,11 @@
     border-bottom: solid 2px #5589A3;
     
   }
-  .logo{
+  .logo_box{
     width: 7rem;
+  }
+  .logo{
+    width: 100%;
   
   }
   .social-media_item {
@@ -19,6 +22,7 @@
   
   .social-media_item a{
     margin: auto;
+  color: #fff;
   }
   .social-media_item:hover{
     box-shadow: 0 2px 2px rgba(0,0,0,.3);
@@ -27,6 +31,4 @@
   .social-media_item:not(:last-child){
     margin-right: 1rem;
   }
-  a{
-    color: #fff;
-  }
+  
