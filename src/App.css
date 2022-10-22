@@ -1,0 +1,23 @@
+.header{
+  padding: 2rem 0 ;
+  
+}
+.logo{
+  width: 7rem;
+
+}
+.social-media_item {
+  width: 3rem;
+  height: 3rem;
+  background: #5589A3;
+  padding: 0.5rem;
+  border-radius: 5rem;
+  display: flex;
+  align-items: center;
+}
+.social-media_item:not(:last-child){
+  margin-right: 1rem;
+}
+a{
+  color: #fff;
+}
