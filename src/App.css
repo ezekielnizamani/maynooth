@@ -1,7 +1,14 @@
 .serach-input{
     padding: 0.4rem;
     width: 100%;
+    text-transform: capitalize;
+    border:  solid 1px;
+    padding-left: .9rem;
+    width: 100%;
 }
+.serach-input{
+    outline: none;
+  }
 .navigation{
     padding: 2rem 0;
 }

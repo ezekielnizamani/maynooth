@@ -7,7 +7,7 @@ import "./Header.styles.css";
 const Header = () => {
   return (
     <header className="header">
-      <div className="wrapper flex justify-between">
+      <div className="wrapper ">
         <select>
           <option selected>USD</option>
         </select>
@@ -15,8 +15,8 @@ const Header = () => {
           <img className="logo" src={Logo} alt="maynooth logo" />
         </div>
 
-        <ul className="social-medias_list flex items-center">
-          <li className="social-media_item flex items-center">
+        <ul className="social-medias_list ">
+          <li className="social-media_item ">
             <a
               href="https://www.facebook.com/hazqeel.niz.2"
               alt="hizqel nizamani facebook"
@@ -24,7 +24,7 @@ const Header = () => {
               <img src={Facebook} alt="facebook icon" />
             </a>
           </li>
-          <li className="social-media_item flex items-center">
+          <li className="social-media_item ">
             <a
               href="https://www.facebook.com/hazqeel.niz.2"
               alt="hizqel nizamani instagram"
@@ -32,7 +32,7 @@ const Header = () => {
               <img src={Instagram} alt="Instagram icon" />
             </a>
           </li>
-          <li className="social-media_item flex items-center">
+          <li className="social-media_item ">
             <a
               href="https://www.facebook.com/hazqeel.niz.2"
               alt="hizqel nizamani pinterest"

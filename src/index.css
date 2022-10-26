@@ -19,10 +19,5 @@ body{
   margin: auto;
 }
 input{
-  border:  solid 1px;
-  padding-left: .9rem;
-  width: 100%;
-}
-input:focus{
-  outline: none;
+ 
 }
