@@ -24,8 +24,7 @@ export const SocialMediaItem = styled.li`
   `;
 export const SocialMediaItemList = styled.ul`
 display:flex;
-list-style:none;
-
+list-style: none;
 `
 export const HeaderFlex =  styled.div`
 

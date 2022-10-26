@@ -1,37 +1,39 @@
 import React from 'react'
 import CartIcon from "../../assets/images/icons/cart-icon.svg";
-
+import {SerachInput,NavigationStyle,NavigationList,NavigationItem,NavigationFlex,NavigationLink} from './Navigation.styles'
 const Navigation = () => {
   return (
-    <nav className="navigation">
+    <NavigationStyle>
     <div className="wrapper ">
-      <div className="search_box">
-        <input
+    <NavigationFlex>
+    <div className="search_box">
+        <SerachInput
           type="search"
           placeholder="find something you love"
           className="serach-input"
         />
         <span className="zoom_icon"></span>
       </div>
-      <ul className="flex items-center navigation-items ">
-        <li className="navigation-item">
-          <a href="#">Bedroom</a>
-        </li>
-        <li className="navigation-item">
-          <a href="#">living room</a>
-        </li>
-        <li className="navigation-item">
-          <a href="#">kitchen & dinning</a>
-        </li>
-        <li className="navigation-item">
-          <a href="#">Sign in / sign up</a>
-        </li>
-        <li className="navigation-item">
+      <NavigationList >
+        <NavigationItem>
+          <NavigationLink href="#">Bedroom</NavigationLink>
+        </NavigationItem>
+        <NavigationItem>
+          <NavigationLink href="#">living room</NavigationLink>
+        </NavigationItem>
+        <NavigationItem>
+          <NavigationLink href="#">kitchen & dinning</NavigationLink>
+        </NavigationItem>
+        <NavigationItem>
+          <NavigationLink href="#">Sign in / sign up</NavigationLink>
+        </NavigationItem>
+        <NavigationItem>
           <img src={CartIcon} />
-        </li>
-      </ul>
+        </NavigationItem>
+      </NavigationList>
+      </NavigationFlex>  
     </div>
-    </nav>
+    </NavigationStyle>
   )
 }
 
