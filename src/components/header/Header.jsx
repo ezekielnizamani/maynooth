@@ -3,46 +3,48 @@ import Logo from "../../assets/images/logo/logo.svg";
 import Facebook from "../../assets/images/icons/facebook.svg";
 import Instagram from "../../assets/images/icons/instagram_icon.svg";
 import Pinterest from "../../assets/images/icons/pinterest_icon.svg";
-import "./Header.styles.css";
+import { HeaderStyle,LogoBox,Image ,SocialMediaItem,SocialMediaItemList,HeaderFlex,SocialMediaItemLink} from "./Header.styles.jsx";
 const Header = () => {
   return (
-    <header className="header">
-      <div className="wrapper ">
+    <HeaderStyle>
+      <div className="wrapper">
+      <HeaderFlex>
         <select>
           <option selected>USD</option>
         </select>
-        <div className="logo_box">
-          <img className="logo" src={Logo} alt="maynooth logo" />
-        </div>
+        <LogoBox>
+          <Image className="logo" src={Logo} alt="maynooth logo" />
+        </LogoBox>
 
-        <ul className="social-medias_list ">
-          <li className="social-media_item ">
-            <a
+        <SocialMediaItemList>
+          <SocialMediaItem>
+            <SocialMediaItemLink
               href="https://www.facebook.com/hazqeel.niz.2"
               alt="hizqel nizamani facebook"
             >
-              <img src={Facebook} alt="facebook icon" />
-            </a>
-          </li>
-          <li className="social-media_item ">
-            <a
+              <Image src={Facebook} alt="facebook icon" />
+            </SocialMediaItemLink>
+          </SocialMediaItem>
+          <SocialMediaItem>
+            <SocialMediaItemLink
               href="https://www.facebook.com/hazqeel.niz.2"
               alt="hizqel nizamani instagram"
             >
-              <img src={Instagram} alt="Instagram icon" />
-            </a>
-          </li>
-          <li className="social-media_item ">
-            <a
+              <Image src={Instagram} alt="Instagram icon" />
+            </SocialMediaItemLink>
+          </SocialMediaItem>
+          <SocialMediaItem>
+            <SocialMediaItemLink
               href="https://www.facebook.com/hazqeel.niz.2"
               alt="hizqel nizamani pinterest"
             >
-              <img src={Pinterest} alt="pinterest icon" />
-            </a>
-          </li>
-        </ul>
+              <Image src={Pinterest} alt="pinterest icon" />
+            </SocialMediaItemLink>
+          </SocialMediaItem>
+        </SocialMediaItemList>
+        </HeaderFlex>
       </div>
-    </header>
+    </HeaderStyle>
   );
 };
 
